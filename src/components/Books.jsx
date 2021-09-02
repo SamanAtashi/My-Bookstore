@@ -1,15 +1,9 @@
 import React from 'react';
+import Book from './Book';
 
-const Books = () => {
-  const books = [
-    { id: 1, name: 'book1' },
-    { id: 2, name: 'book2' },
-  ];
-
-  return (
-    <ul>
-      {books.map((book) => <li key={book.id}>{book.name}</li>)}
-    </ul>
-  );
-};
+const Books = () => (
+  <ul>
+    <Book />
+  </ul>
+);
 export default Books;
